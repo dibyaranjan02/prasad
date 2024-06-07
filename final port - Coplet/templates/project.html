@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PROJECT</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='project.css') }}">
+</head>
+<body>
+    <header>
+        <div class="logo">PRASAD KUMAR PALEI</div>
+        <nav>
+            <ul>
+                <li><a href="/">Home</a></li>
+                <li><a href="/about">About</a></li>
+                <li><a href="/resume">Resume</a></li>
+                <li><a href="/skills">Skills</a></li>
+                <li><a href="/project" class="active">Project</a></li>
+                <li><a href="/contact">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+    <div class="containerr">
+        <div class="date">
+            <h1>JAN 3th 2023-24</h1>
+        </div>
+        <div class="product-name">
+            <h1>My Project</h1>
+        </div>
+    </div>
+    <div class="container">
+        <div class="post">
+            <div class="post-header">
+                <div class="logo">Simple Calculator</div>
+                <div class="search-bar">App</div>
+            </div>
+            <div class="post-content">
+                <img src="{{ url_for('static', filename='Calculator.jpg') }}" alt="Calculator Image">
+                <div class="text-overlay">
+                    <p>This is a user-friendly Number System Calculator web application.</p>
+                </div>
+            </div>
+            <div class="post-footer">
+                <span>❤️😊👍</span>
+                <span>Your Friend and 921 others</span>
+                <span>320 Comments</span>
+            </div>
+        </div>
+        <div class="post">
+            <div class="post-header">
+                <div class="logo">Student Collaboration</div>
+                <div class="search-bar">Web</div>
+            </div>
+            <div class="post-content">
+                <img src="{{ url_for('static', filename='student.jpg') }}" alt="Student Image">
+                <div class="text-overlay">
+                    <p>Unlocking the Power of Teamwork: Enhancing Learning Through Student Collaboration</p>
+                </div>
+            </div>
+            <div class="post-footer">
+                <span>❤️😊👍</span>
+                <span>Your Friend and 560 others</span>
+                <span>266 Comments</span>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

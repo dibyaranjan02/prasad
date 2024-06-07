@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>RESUME</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='resume.css') }}">
+</head>
+<body>
+    <header>
+        <div class="logo">PRASAD KUMAR PALEI</div>
+        <nav>
+            <ul>
+                <li><a href="/">Home</a></li>
+                <li><a href="/about">About</a></li>
+                <li><a href="/resume" class="active">Resume</a></li>
+                <li><a href="/skills">Skills</a></li>
+                <li><a href="/project">Project</a></li>
+                <li><a href="/contact">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <div class="container">
+        <h1>Resume</h1>
+        <button class="download-btn">Download CV</button>
+        <div class="experience-section">
+            <div class="resume-box">
+                <img src="{{ url_for('static', filename='imaggr.png') }}" alt="Resume" class="resume-img">
+            </div>
+        </div>
+    </div>
+</body>     
+</html>

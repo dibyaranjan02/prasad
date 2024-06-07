@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Page</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='contact.css') }}">
+</head>
+<body>
+    <header>
+        <div class="logo">PRASAD KUMAR PALEI</div>
+        <nav>
+            <ul>
+                <li><a href="/">Home</a></li>
+                <li><a href="/about">About</a></li>
+                <li><a href="/resume">Resume</a></li>
+                <li><a href="/skills">Skills</a></li>
+                <li><a href="/project">Project</a></li>
+                <li><a href="/contact" class="active">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+    <div class="contact-section">
+        <h1>Get In Touch <span>with Me</span></h1>
+        <p> "Unlocking Effective Communication Strategies for a Connected World".</p>
+        
+        <div class="form-container">
+            <div class="contact-form">
+                <h2>Just Message Me</h2>
+                <form>
+                    <input type="text" placeholder="Your Name" required>
+                    <input type="email" placeholder="Your Email" required>
+                    <input type="text" placeholder="Your Message Subject" required>
+                    <textarea placeholder="Write your Message" required></textarea>
+                    <button type="submit">Contact Me</button>
+                </form>
+            </div>
+            <div class="contact-info">
+                <h2>Contact Information</h2>
+                <p> "Unlocking Effective Communication Strategies for a Connected World".</p>
+                <div class="info-box">
+                    <div class="info">
+                        <img src="{{ url_for('static', filename='gmail.png') }}" alt="Email Icon">
+                        <div>
+                            <p>Email</p>
+                            <span>prasadpalei360@gmail.com</span><br>
+                            <span>220101120231@cutm.ac.in       </span>
+                        </div>
+                    </div>
+                    <div class="info">
+                        <img src="{{ url_for('static', filename='phone-call.png') }}" alt="Phone Icon">
+                        <div>
+                            <p>Phone</p>
+                            <span>+91 7848881646</span>
+                        </div>
+                    </div>
+                    <div class="info">
+                        <img src="{{ url_for('static', filename='map.png') }}" alt="Address Icon">
+                        <div>
+                            <p>Address</p>
+                            <span>Khallikote, Ganjam,</span><br>
+                            <span>Odisha, India.</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="social-links">
+                    <p>Visit my social profile and get connected</p>
+                    <a href="https://www.linkedin.com/in/prasad-kumar-palei-792609295?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=ios_app"> <img src="{{ url_for('static', filename='linked.png') }}" alt="LinkedIn"></a>
+                    <a href="https://www.facebook.com/rahu.prasad.31?mibextid=LQQJ4d"> <img src="{{ url_for('static', filename='faceBk.png') }}" alt="Facebook"></a>
+                    <a href="https://github.com/prasad-project"> <img src="{{ url_for('static', filename='gitH.png') }}" alt="GitHub"></a>
+                    <a href="https://www.instagram.com/itz_venush.yt?utm_source=qr"> <img src="{{ url_for('static', filename='inst.png') }}" alt="Instagram"></a>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

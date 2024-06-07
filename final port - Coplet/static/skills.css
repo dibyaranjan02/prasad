@@ -1,0 +1,268 @@
+body,
+.headd,
+header,
+footer,
+.about-me,
+footer {
+    background: linear-gradient(180deg, #390340, #1d012b, #0d000d); /* Updated background color */
+}
+
+body {
+    font-family: 'Roboto', sans-serif;
+    margin: 0;
+    padding: 0;
+    color: #e9ecef;
+    font-size: 1em;
+    background-color: #390340; /* Background color for body */
+}
+
+header {
+    background-color: #240022; /* Even darker purple for header */
+    padding: 20px 50px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+header .logo {
+    font-size: 1.5em;
+    color: #ffdf00; /* Bright yellow for the logo */
+    font-weight: bold;
+}
+
+header nav ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    gap: 20px;
+}
+
+header nav ul li {
+    margin: 0;
+}
+
+header nav ul li a {
+    text-decoration: none;
+    color: #ffffff;
+    font-size: 1em;
+    padding: 10px 20px;
+    border-radius: 20px;
+    transition: background-color 0.3s ease;
+}
+
+header nav ul li a:hover,
+header nav ul li a.active {
+    background-color: #ffdf00; /* Bright yellow for active and hover state */
+    color: #320032; /* Dark purple text color for contrast */
+}
+
+
+
+
+.skills-section {
+    margin: 40px 0;
+    text-align: center;
+    padding: 20px;
+    background-color: #2b002b; /* Darker background for the skills section */
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3); /* Add shadow to the skills section */
+}
+
+.skills-section h2 {
+    font-size: 2em; /* Adjusted font size */
+    margin-bottom: 20px;
+    color: #ffd700; /* Change font color */
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.7); /* Add text shadow */
+}
+
+.skills-container {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.skill {
+    margin: 15px;
+    transition: transform 0.3s, box-shadow 0.3s, background-color 0.3s; /* Smooth transition for hover effects */
+}
+
+.skill img {
+    width: 60px; /* Slightly increased size */
+    height: 60px;
+    border-radius: 10px;
+    background-color: #4a005a;
+    padding: 15px;
+    transition: transform 0.3s, box-shadow 0.3s, background-color 0.3s; /* Smooth transition for hover effects */
+}
+
+.skill:hover {
+    transform: translateY(-10px); /* Slightly lift the card on hover */
+}
+
+.skill:hover img {
+    transform: scale(1.2); /* Slightly enlarge the image on hover */
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3); /* Add shadow effect on hover */
+    background-color: #ffd700; /* Change background color on hover */
+}
+
+.skill-title {
+    margin-top: 10px;
+    font-size: 1em;
+    color: #ffd700; /* Title color */
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.5); /* Add text shadow */
+}
+
+
+
+
+
+/* Media Queries for Responsiveness */
+
+/* Adjustments for screens smaller than 1200px */
+@media (max-width: 1200px) {
+    header {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    header nav {
+        margin-top: 20px;
+    }
+
+    header nav ul li a {
+        padding: 8px 14px;
+        font-size: 0.85em;
+    }
+
+    .container {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .about-me,
+    .timeline {
+        width: 100%;
+        margin-right: 0;
+    }
+}
+
+/* Adjustments for screens smaller than 768px */
+@media (max-width: 768px) {
+    header {
+        padding: 15px 30px;
+    }
+
+    header .logo {
+        font-size: 1.2em;
+    }
+
+    header nav ul li a {
+        padding: 8px 14px;
+        font-size: 0.85em;
+    }
+
+    .about-me {
+        padding: 15px;
+        margin-bottom: 20px;
+    }
+
+    .about-me h1 {
+        font-size: 2em;
+    }
+
+    .about-me p {
+        font-size: 1.1em;
+    }
+
+    .timeline {
+        padding: 15px;
+    }
+
+    .timeline h1 {
+        font-size: 2em;
+        margin-bottom: 15px;
+    }
+
+    .timeline-item {
+        margin-bottom: 20px;
+    }
+
+    .timeline-icon {
+        width: 15px;
+        height: 15px;
+        left: -8px;
+        top: 5px;
+    }
+
+    .timeline-content {
+        padding-left: 25px;
+    }
+
+    .timeline-content h2 {
+        font-size: 1.3em;
+    }
+
+    .timeline-content h3 {
+        font-size: 1.1em;
+    }
+
+    .timeline-content p {
+        font-size: 0.9em;
+    }
+}
+
+/* Adjustments for screens smaller than 480px */
+@media (max-width: 480px) {
+    header {
+        padding: 15px;
+    }
+
+    header .logo {
+        font-size: 1em;
+    }
+
+    header nav ul li a {
+        padding: 6px 12px;
+        font-size: 0.75em;
+    }
+
+    .about-me h1 {
+        font-size: 1.8em;
+    }
+
+    .about-me p {
+        font-size: 1em;
+    }
+
+    .timeline h1 {
+        font-size: 1.8em;
+    }
+
+    .timeline-item::before {
+        left: 0;
+    }
+
+    .timeline-icon {
+        width: 12px;
+        height: 12px;
+        left: -6px;
+        top: 5px;
+    }
+
+    .timeline-content {
+        padding-left: 20px;
+    }
+
+    .timeline-content h2 {
+        font-size: 1.2em;
+    }
+
+    .timeline-content h3 {
+        font-size: 1em;
+    }
+
+    .timeline-content p {
+        font-size: 0.8em;
+    }
+}

@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='home.css') }}">
+</head>
+<body>
+    <header>
+        <div class="logo">PRASAD KUMAR PALEI</div>
+        <nav>
+            <ul>
+                <li><a href="/" class="active">Home</a></li>
+                <li><a href="/about">About</a></li>
+                <li><a href="/resume">Resume</a></li>
+                <li><a href="/skills">Skills</a></li>
+                <li><a href="/project">Project</a></li>
+                <li><a href="/contact">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+    
+    <main>
+        <section class="intro">
+            <div class="intro-text">
+                <p class="hello">Hello!</p>
+                <h1>I'm <span>Prasad</span>,<br>I AM A SOFTWARE DEVELOPER</h1>
+                <p class="quote">I am a web developer, working in both, backend and frontend programming.</p>
+            </div>
+            <div class="intro-image">
+                <img src="{{ url_for('static', filename='pic.jpg.jpg') }}" alt="Jenny">
+            </div>
+            <div class="experience">
+                <div class="stars">
+                    <span>★★★★★</span>
+                </div>
+            </div>
+            <div class="buttons">
+                <a href="/resume" class="btn">Resume</a>
+                <a href="/contact" class="btn">Hire me</a>
+            </div>
+        </section>
+    </main>
+</body>
+</html>

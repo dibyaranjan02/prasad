@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SKILLS</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='skills.css') }}">
+</head>
+<body>
+    <header>
+        <div class="logo">PRASAD KUMAR PALEI</div>
+        <nav>
+            <ul>
+                <li><a href="/">Home</a></li>
+                <li><a href="/about">About</a></li>
+                <li><a href="/resume">Resume</a></li>
+                <li><a href="/skills" class="active">Skills</a></li>
+                <li><a href="/project">Project</a></li>
+                <li><a href="/contact">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <section class="skills-section">
+            <h2>Languages</h2>
+            <div class="skills-container">
+                <div class="skill">
+                    <img src="{{ url_for('static', filename='cc.png') }}" alt="C">
+                    <div class="skill-title">C</div>
+                </div>
+                <div class="skill">
+                    <img src="{{ url_for('static', filename='python.png') }}" alt="Python">
+                    <div class="skill-title">Python</div>
+                </div>
+                <div class="skill">
+                    <img src="{{ url_for('static', filename='javva.png') }}" alt="Java">
+                    <div class="skill-title">Java</div>
+                </div>
+                <div class="skill">
+                    <img src="{{ url_for('static', filename='js.png') }}" alt="JavaScript">
+                    <div class="skill-title">JavaScript</div>
+                </div>
+            </div>
+        </section>
+        
+        <section class="skills-section">
+            <h2>Web Development & Version Control</h2>
+            <div class="skills-container">
+                <div class="skill">
+                    <img src="{{ url_for('static', filename='html.png') }}" alt="HTML5">
+                    <div class="skill-title">HTML5</div>
+                </div>
+                <div class="skill">
+                    <img src="{{ url_for('static', filename='css.png') }}" alt="CSS3">
+                    <div class="skill-title">CSS3</div>
+                </div>
+                <div class="skill">
+                    <img src="{{ url_for('static', filename='React.jpg') }}" alt="React">
+                    <div class="skill-title">React</div>
+                </div>
+                <div class="skill">
+                    <img src="{{ url_for('static', filename='gitHubb.png') }}" alt="Git">
+                    <div class="skill-title">Git</div>
+                </div>
+            </div>
+        </section>
+        
+        <section class="skills-section">
+            <h2>Databases & Backend</h2>
+            <div class="skills-container">
+                <div class="skill">
+                    <img src="{{ url_for('static', filename='php.png') }}" alt="PHP">
+                    <div class="skill-title">PHP</div>
+                </div>
+                <div class="skill">
+                    <img src="{{ url_for('static', filename='flask.png') }}" alt="Flask">
+                    <div class="skill-title">Flask</div>
+                </div>
+                <div class="skill">
+                    <img src="{{ url_for('static', filename='MongoDB.png') }}" alt="MongoDB">
+                    <div class="skill-title">MongoDB</div>
+                </div>
+                <div class="skill">
+                    <img src="{{ url_for('static', filename='mysql.png') }}" alt="MySQL">
+                    <div class="skill-title">MySQL</div>
+                </div>
+            </div>
+        </section>
+    </main>
+</body>
+</html>

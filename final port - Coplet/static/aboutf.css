@@ -1,0 +1,311 @@
+body,
+header,
+footer,
+.about-me,
+.timeline {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #320032; /* Dark purple background */
+    color: #ffffff; /* White text color */
+}
+
+header {
+    background-color: #240022; /* Even darker purple for header */
+    padding: 20px 50px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+header .logo {
+    font-size: 1.5em;
+    color: #ffdf00; /* Bright yellow for the logo */
+    font-weight: bold;
+}
+
+header nav ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    gap: 20px;
+}
+
+header nav ul li {
+    margin: 0;
+}
+
+header nav ul li a {
+    text-decoration: none;
+    color: #ffffff;
+    font-size: 1em;
+    padding: 10px 20px;
+    border-radius: 20px;
+    transition: background-color 0.3s ease;
+}
+
+header nav ul li a:hover,
+header nav ul li a.active {
+    background-color: #ffdf00; /* Bright yellow for active and hover state */
+    color: #320032; /* Dark purple text color for contrast */
+}
+
+.container {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: flex-start;
+    padding: 20px;
+}
+
+.about-me {
+    flex: 1;
+    padding: 20px;
+    background-color: #4a004a; /* Slightly lighter purple for contrast */
+    border-radius: 10px;
+    margin-right: 20px;
+}
+
+.about-me h1 {
+    font-size: 2.5em;
+    color: #ffdf00;
+    margin-bottom: 10px;
+}
+
+.about-me p {
+    font-size: 1.2em;
+    line-height: 1.6;
+}
+
+.timeline {
+    flex: 2;
+    padding: 20px;
+    background-color: #4a004a; /* Slightly lighter purple for contrast */
+    border-radius: 10px;
+    position: relative;
+}
+
+.timeline h1 {
+    font-size: 2.5em;
+    margin-bottom: 20px;
+    color: #ffdf00;
+}
+
+.timeline-item {
+    position: relative;
+    margin-bottom: 30px;
+    padding-left: 30px;
+}
+
+.timeline-item::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 2px;
+    height: 100%;
+    background-color: #ff6600;
+}
+
+.timeline-icon {
+    width: 20px;
+    height: 20px;
+    background-color: #ff6600;
+    border-radius: 50%;
+    position: absolute;
+    left: -11px;
+    top: 0;
+}
+
+.timeline-content {
+    padding-left: 40px;
+    background-color: #320032;
+    border-radius: 5px;
+    padding: 10px;
+}
+
+.timeline-content h2 {
+    font-size: 1.5em;
+    color: #ff6600;
+    margin: 0;
+}
+
+.timeline-content h3 {
+    font-size: 1.2em;
+    margin: 10px 0;
+}
+
+.timeline-content p {
+    font-size: 1em;
+    color: #ccc;
+}
+
+.image {
+    flex: 1;
+    overflow: hidden;
+    margin-left: 20px;
+}
+
+.image img {
+    width: 100%;
+    height: 100vh;
+    object-fit: cover;
+    border-radius: 10px;
+}
+
+
+
+
+
+
+
+/* Media Queries for Responsiveness */
+
+/* Adjustments for screens smaller than 1200px */
+@media (max-width: 1200px) {
+    header {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    header nav {
+        margin-top: 20px;
+    }
+
+    header nav ul li a {
+        padding: 8px 14px;
+        font-size: 0.85em;
+    }
+
+    .container {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .about-me,
+    .timeline {
+        width: 100%;
+        margin-right: 0;
+    }
+}
+
+/* Adjustments for screens smaller than 768px */
+@media (max-width: 768px) {
+    header {
+        padding: 15px 30px;
+    }
+
+    header .logo {
+        font-size: 1.2em;
+    }
+
+    header nav ul li a {
+        padding: 8px 14px;
+        font-size: 0.85em;
+    }
+
+    .about-me {
+        padding: 15px;
+        margin-bottom: 20px;
+    }
+
+    .about-me h1 {
+        font-size: 2em;
+    }
+
+    .about-me p {
+        font-size: 1.1em;
+    }
+
+    .timeline {
+        padding: 15px;
+    }
+
+    .timeline h1 {
+        font-size: 2em;
+        margin-bottom: 15px;
+    }
+
+    .timeline-item {
+        margin-bottom: 20px;
+    }
+
+    .timeline-icon {
+        width: 15px;
+        height: 15px;
+        left: -8px;
+        top: 5px;
+    }
+
+    .timeline-content {
+        padding-left: 25px;
+    }
+
+    .timeline-content h2 {
+        font-size: 1.3em;
+    }
+
+    .timeline-content h3 {
+        font-size: 1.1em;
+    }
+
+    .timeline-content p {
+        font-size: 0.9em;
+    }
+}
+
+/* Adjustments for screens smaller than 480px */
+@media (max-width: 480px) {
+    header {
+        padding: 15px;
+    }
+
+    header .logo {
+        font-size: 1em;
+    }
+
+    header nav ul li a {
+        padding: 6px 12px;
+        font-size: 0.75em;
+    }
+
+    .about-me h1 {
+        font-size: 1.8em;
+    }
+
+    .about-me p {
+        font-size: 1em;
+    }
+
+    .timeline h1 {
+        font-size: 1.8em;
+    }
+
+    .timeline-item::before {
+        left: 0;
+    }
+
+    .timeline-icon {
+        width: 12px;
+        height: 12px;
+        left: -6px;
+        top: 5px;
+    }
+
+    .timeline-content {
+        padding-left: 20px;
+    }
+
+    .timeline-content h2 {
+        font-size: 1.2em;
+    }
+
+    .timeline-content h3 {
+        font-size: 1em;
+    }
+
+    .timeline-content p {
+        font-size: 0.8em;
+    }
+}
